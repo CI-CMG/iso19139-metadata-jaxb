@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bindings
+  xmlns="http://java.sun.com/xml/ns/jaxb"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+  version="2.1">
+
+  <globalBindings generateValueClass="true" generateElementClass="true">
+    <xjc:simple/>
+  </globalBindings>
+
+  <bindings schemaLocation="schema/gml/coordinateOperations.xsd">
+    <bindings node="//xs:element[@name='ParameterValue']">
+      <class name="ParameterValue2" />
+    </bindings>
+    <bindings node="//xs:element[@name='OperationParameter']">
+      <class name="OperationParameter2" />
+    </bindings>
+    <bindings node="//xs:element[@name='Conversion']">
+      <class name="Conversion2" />
+    </bindings>
+  </bindings>
+
+  <bindings schemaLocation="schema/gml/coordinateReferenceSystems.xsd">
+        <bindings node="//xs:element[@name='derivedCRSType']">
+          <class name="DerivedCRSType2" />
+        </bindings>
+  </bindings>
+
+  <bindings schemaLocation="schema/gml/coordinateSystems.xsd">
+    <bindings node="//xs:element[@name='EllipsoidalCS']">
+      <class name="EllipsoidalCS2" />
+    </bindings>
+    <bindings node="//xs:element[@name='CartesianCS']">
+      <class name="CartesianCS2" />
+    </bindings>
+    <bindings node="//xs:element[@name='SphericalCS']">
+      <class name="SphericalCS2" />
+    </bindings>
+    <bindings node="//xs:element[@name='VerticalCS']">
+      <class name="VerticalCS2" />
+    </bindings>
+    <bindings node="//xs:element[@name='CylindricalCS']">
+      <class name="CylindricalCS2" />
+    </bindings>
+    <bindings node="//xs:element[@name='LinearCS']">
+      <class name="LinearCS2" />
+    </bindings>
+    <bindings node="//xs:element[@name='PolarCS']">
+      <class name="PolarCS2" />
+    </bindings>
+    <bindings node="//xs:element[@name='UserDefinedCS']">
+      <class name="UserDefinedCS2" />
+    </bindings>
+    <bindings node="//xs:element[@name='AffineCS']">
+      <class name="AffineCS2" />
+    </bindings>
+    <bindings node="//xs:element[@name='TimeCS']">
+      <class name="TimeCS2" />
+    </bindings>
+  </bindings>
+
+  <bindings schemaLocation="schema/gml/datums.xsd">
+    <bindings node="//xs:element[@name='SecondDefiningParameter']">
+      <class name="SecondDefiningParameter2" />
+    </bindings>
+    <bindings node="//xs:element[@name='Ellipsoid']">
+      <class name="Ellipsoid2" />
+    </bindings>
+    <bindings node="//xs:element[@name='PrimeMeridian']">
+      <class name="PrimeMeridian2" />
+    </bindings>
+    <bindings node="//xs:element[@name='GeodeticDatum']">
+      <class name="GeodeticDatum2" />
+    </bindings>
+    <bindings node="//xs:element[@name='VerticalDatum']">
+      <class name="VerticalDatum2" />
+    </bindings>
+    <bindings node="//xs:element[@name='EngineeringDatum']">
+      <class name="EngineeringDatum2" />
+    </bindings>
+    <bindings node="//xs:element[@name='ImageDatum']">
+      <class name="ImageDatum2" />
+    </bindings>
+    <bindings node="//xs:element[@name='TemporalDatum']">
+      <class name="TemporalDatum2" />
+    </bindings>
+  </bindings>
+
+  <bindings schemaLocation="schema/gml/geometryPrimitives.xsd">
+    <bindings node="//xs:attribute[@name='rows']">
+      <property name="RowsAttribute"/>
+    </bindings>
+  </bindings>
+
+  <bindings schemaLocation="schema/gml/geometryAggregates.xsd">
+    <bindings node="//xs:element[@ref='gml:geometryMember']">
+      <property name="GeometryMemberElement"/>
+    </bindings>
+    <bindings node="//xs:element[@ref='gml:pointMember']">
+      <property name="PointMemberElement"/>
+    </bindings>
+    <bindings node="//xs:element[@ref='gml:curveMember']">
+      <property name="CurveMemberElement"/>
+    </bindings>
+    <bindings node="//xs:element[@ref='gml:surfaceMember']">
+      <property name="SurfaceMemberElement"/>
+    </bindings>
+    <bindings node="//xs:element[@ref='gml:solidMember']">
+      <property name="SolidMemberElement"/>
+    </bindings>
+  </bindings>
+
+
+  <bindings schemaLocation="schema/gml/topology.xsd">
+    <bindings node="//xs:element[@ref='gml:topoPrimitiveMember']">
+      <property name="TopoPrimitiveMemberElement"/>
+    </bindings>
+  </bindings>
+
+  <bindings schemaLocation="schema/gml/valueObjects.xsd">
+    <bindings node="//xs:element[@ref='gml:valueComponent']">
+      <property name="ValueComponentElement"/>
+    </bindings>
+  </bindings>
+
+  <bindings schemaLocation="schema/gml/geometryBasic0d1d.xsd">
+    <bindings node="//xs:attribute[@name='axisLabels']">
+      <property name="AxisLabelsAttribute"/>
+    </bindings>
+  </bindings>
+
+  <bindings schemaLocation="schema/gml/deprecatedTypes.xsd">
+    <bindings node="//xs:element[@ref='gml:member']">
+      <property name="MemberElement"/>
+    </bindings>
+    <bindings node="//xs:element[@ref='gml:featureMember']">
+      <property name="FeatureMemberElement"/>
+    </bindings>
+  </bindings>
+
+
+
+</bindings>
