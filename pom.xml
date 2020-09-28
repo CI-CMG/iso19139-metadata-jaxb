@@ -86,7 +86,7 @@
             <configuration>
               <failBuildOnAnyVulnerability>true</failBuildOnAnyVulnerability>
             </configuration>
-            <executions>
+            <executions>git
               <execution>
                 <goals>
                   <goal>check</goal>
