@@ -6,6 +6,8 @@ Additional project information, javadocs, and test coverage is located at https:
 
 ## Adding To Your Project
 
+jakarta.xml.bind-api is required to use this library. Add it as a dependency to your project with your choice of implementation.
+
 Add the following dependency to your Maven pom.xml
 
 ```xml
@@ -14,4 +16,17 @@ Add the following dependency to your Maven pom.xml
       <artifactId>iso19139-metadata-jaxb</artifactId>
       <version>1.0.0</version>
     </dependency>
+
+    <!-- additional XML dependencies -->
+    <dependency>
+      <groupId>jakarta.xml.bind</groupId>
+      <artifactId>jakarta.xml.bind-api</artifactId>
+      <version>4.0.2</version>
+    </dependency>
+    <!-- use an implementation of your choice -->
+    <dependency>
+      <groupId>org.glassfish.jaxb</groupId>
+      <artifactId>jaxb-runtime</artifactId>
+      <version>4.0.5</version>
+   </dependency>
 ```
