@@ -45,6 +45,9 @@
     <ossIndexUsername>${env.OSS_INDEX_USERNAME}</ossIndexUsername>
     <ossIndexPassword>${env.OSS_INDEX_PASSWORD}</ossIndexPassword>
     <xml-bind-version>4.0.2</xml-bind-version>
+
+    <git.username/>
+    <git.password/>
   </properties>
 
   <dependencies>
@@ -196,7 +199,9 @@
           <releaseProfiles>release,site-publish</releaseProfiles>
           <goals>deploy site</goals>
           <tagNameFormat>v@{project.version}</tagNameFormat>
-          <arguments>-Pdep-check -D${sign.serverId}</arguments>
+          <arguments>-Pdep-check -D${sign.serverId} -Dgit.username=${git.username} -Dgit.password=${git.password}</arguments>
+          <username>${git.username}</username>
+          <password>${git.password}</password>
         </configuration>
       </plugin>
 
