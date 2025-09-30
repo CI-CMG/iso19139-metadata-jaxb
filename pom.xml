@@ -30,7 +30,7 @@
     <connection>scm:git:https://github.com/CI-CMG/iso19139-metadata-jaxb.git</connection>
     <developerConnection>scm:git:https://github.com/CI-CMG/iso19139-metadata-jaxb.git</developerConnection>
     <url>https://github.com/CI-CMG/iso19139-metadata-jaxb</url>
-    <tag>HEAD</tag>
+    <tag>2.0</tag>
   </scm>
 
   <properties>
@@ -46,8 +46,8 @@
     <ossIndexPassword>${env.OSS_INDEX_PASSWORD}</ossIndexPassword>
     <xml-bind-version>4.0.2</xml-bind-version>
 
-    <git.username/>
-    <git.password/>
+    <git.username />
+    <git.password />
   </properties>
 
   <dependencies>
