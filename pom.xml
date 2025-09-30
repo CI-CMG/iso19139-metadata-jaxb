@@ -252,7 +252,7 @@
             <artifactId>dependency-check-maven</artifactId>
             <version>12.1.6</version>
             <configuration>
-              <failBuildOnAnyVulnerability>true</failBuildOnAnyVulnerability>
+              <failBuildOnCVSS>0</failBuildOnCVSS>
               <skipProvidedScope>true</skipProvidedScope>
             </configuration>
             <executions>
